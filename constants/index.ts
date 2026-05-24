@@ -1,11 +1,9 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { FaEnvelope,FaProjectDiagram } from "react-icons/fa";
+
+// Usage in your component:
+// <FaEnvelope className="w-6 h-6 text-white" />
 
 export const SKILL_DATA = [
   {
@@ -44,12 +42,12 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "React Query",
+  //   image: "reactquery.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -62,18 +60,18 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "Framer Motion",
+  //   image: "framer.png",
+  //   width: 80,
+  //   height: 80,
+  // },
+  // {
+  //   skill_name: "Stripe",
+  //   image: "stripe.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "Node.js",
     image: "node.png",
@@ -90,19 +88,19 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
+    name: "LinkedIn",
+    icon: FaLinkedin,
+    link: "https://linkedin.com/in/sriyas15", 
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
+    name: "GitHub",
+    icon: FaGithub,
+    link: "https://github.com/sriyas15",
   },
   {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
+    name: "LeetCode",
+    icon: SiLeetcode,
+    link: "https://leetcode.com/u/Xh9dvHjIZU", 
   },
 ] as const;
 
@@ -149,12 +147,12 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "React Query",
+  //   image: "reactquery.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -188,18 +186,18 @@ export const BACKEND_SKILL = [
     width: 40,
     height: 40,
   },
-  {
-    skill_name: "Firebase",
-    image: "firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
-    width: 70,
-    height: 70,
-  },
+  // {
+  //   skill_name: "Firebase",
+  //   image: "firebase.png",
+  //   width: 55,
+  //   height: 55,
+  // },
+  // {
+  //   skill_name: "PostgreSQL",
+  //   image: "postgresql.png",
+  //   width: 70,
+  //   height: 70,
+  // },
   {
     skill_name: "MySQL",
     image: "mysql.png",
@@ -212,27 +210,27 @@ export const BACKEND_SKILL = [
     width: 70,
     height: 70,
   },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "Graphql",
+  //   image: "graphql.png",
+  //   width: 80,
+  //   height: 80,
+  // },
 ] as const;
 
 export const FULLSTACK_SKILL = [
-  {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
+  // {
+  //   skill_name: "React Native",
+  //   image: "reactnative.png",
+  //   width: 70,
+  //   height: 70,
+  // },
+  // {
+  //   skill_name: "Tauri",
+  //   image: "tauri.png",
+  //   width: 70,
+  //   height: 70,
+  // },
   {
     skill_name: "Docker",
     image: "docker.png",
@@ -250,96 +248,64 @@ export const FULLSTACK_SKILL = [
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
+    skill_name: "GitHub",
+    image: "github.png",
+    width: 100,
+    height: 80,
   },
 ] as const;
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Blog Application",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      'I developed a Blog Application to allow users to easily create, manage, and share blog posts in an organized way. The application provides a clean and user-friendly interface where users can write articles, edit their content, and publish posts for others to read. It focuses on simplicity and accessibility so that anyone can quickly start writing and sharing their ideas.',
+    image: "/projects/blog.png",
+    link: "https://blog-nine-navy-20.vercel.app",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Workspace for Office",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      'I developed a Mattermost Replica Application that mimics the core features of a modern team communication platform. The application allows users to join workspaces, participate in channels, and communicate with team members through real-time messaging. It is designed to simulate the collaborative environment used in many organizations, enabling users to exchange messages, share updates, and stay connected within a structured workspace.',
+    image: "/projects/workspace.png",
+    link: "https://matter-most-replica.vercel.app",
   },
-  {
-    title: "Space Themed Website",
-    description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
-  },
+  // {
+  //   title: "Space Themed Website",
+  //   description:
+  //     'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
+  //   image: "/projects/project-3.png",
+  //   link: "https://example.com",
+  // },
 ] as const;
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "Connect with me",
     data: [
       {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
+    name: "LinkedIn",
+    icon: FaLinkedin,
+    link: "https://linkedin.com/in/sriyas15", 
+  },
+  {
+    name: "GitHub",
+    icon: FaGithub,
+    link: "https://github.com/sriyas15",
+  },
+  {
+    name: "LeetCode",
+    icon: SiLeetcode,
+    link: "https://leetcode.com/u/Xh9dvHjIZU", 
+  },
     ],
   },
   {
-    title: "Social Media",
+    title: "Quick Links",
     data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
-  },
-  {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
+      { name: "About Me", icon: null, link: "#about" },
+      { name: "Projects", icon: FaProjectDiagram, link: "#projects" },
+      { name: "sriyas1508@gmail.com", icon: FaEnvelope, link: "mailto:sriyas1508@gmail.com" },
     ],
   },
 ] as const;
