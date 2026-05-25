@@ -9,7 +9,7 @@ export const Footer = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = (
-  e: React.MouseEvent<HTMLAnchorElement>,
+  e: React.MouseEvent<HTMLButtonElement>,
   emailAddress: string
 ) => {
   e.preventDefault();
