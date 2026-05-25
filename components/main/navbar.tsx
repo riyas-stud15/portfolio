@@ -80,16 +80,6 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* Source Code */}
-            <Link
-              href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="relative cursor-pointer text-sm font-medium hover:text-white transition-colors group"
-            >
-              Source Code
-              <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#b49bff] transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </Link>
           </div>
         </div>
 
@@ -139,17 +129,6 @@ export const Navbar = () => {
                 </motion.div>
               ))}
               
-              <motion.div variants={itemVariants} className="w-full">
-                <Link
-                  href={LINKS.sourceCode}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="block w-full text-center text-lg text-[#b49bff] hover:text-white hover:bg-[#2A0E61]/30 py-2 rounded-lg transition-all border border-[#2A0E61]/50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Source Code
-                </Link>
-              </motion.div>
             </div>
 
             {/* Social Icons (Mobile) */}
