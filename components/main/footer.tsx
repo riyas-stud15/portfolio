@@ -8,16 +8,18 @@ import { motion, AnimatePresence } from "framer-motion";
 export const Footer = () => {
   const [copied, setCopied] = useState(false);
 
-  const handleCopyEmail = (e, emailAddress) => {
-    e.preventDefault(); // Prevents the default link behavior
-    navigator.clipboard.writeText(emailAddress);
-    setCopied(true);
-    
-    // Hide the "Copied!" tooltip after 2 seconds
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-  };
+  const handleCopyEmail = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  emailAddress: string
+) => {
+  e.preventDefault();
+  navigator.clipboard.writeText(emailAddress);
+  setCopied(true);
+
+  setTimeout(() => {
+    setCopied(false);
+  }, 2000);
+};
 
   return (
     <footer className="w-full bg-transparent text-gray-400 border-t border-gray-800/50 pt-[40px] pb-[20px] px-[15px]">
